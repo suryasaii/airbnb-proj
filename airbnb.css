@@ -1,11 +1,16 @@
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 .img-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 12vw);
     grid-gap:10px; 
-    max-width: 80%;
-    margin-left: 15%;
-    margin-left: 15%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-left: 0px;
+    
     
 }
 
@@ -51,27 +56,104 @@
 
 .nav-bar{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
-    padding: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
     margin: 0px;
-    
+    border-bottom: 1px solid transparent;
+    box-shadow:0px 0px 10px 10px  whitesmoke;
+     
 }
 .icon{
     color:  #FF385C;
     font-size: 0.8cm ;
+    padding-left: 40px;
+    padding-top: 25px;
 }
 .search-box{
-    border: 1px solid gray;
-    width: 6cm;
+    height: 1cm;
+    width: 7cm;
+    border-radius: 30px;
+    box-shadow: 0px 0px 0.5px 0.5px grey;
+    padding-left: 20px;
+    margin-left: 100px;
+    
+    cursor: pointer 
     
 }
-.button{
+.search-box i{
+    background-color: #ff385c;
+    border-radius: 50%;
+   color: white;
+   padding: 10px;
+   float: right;
+   transform: scale(0.8);
+   font-size: 15px;
    
 }
 .host a{
+    margin-left: 50px;
     text-decoration: none;
     color: black;
+
 }
+.navelast{
+    margin-top: 15px;
 
-
+}
+.profile{
+  float: right;
+  height: 1cm;
+  width: 2cm;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0.5px 0.5px grey;
+  padding-bottom: 10px;
+  cursor: pointer
+}
+.profile-logo{
+    margin-left: 20px;
+    size: 10px;
+}
+.description{
+    padding-bottom: 20px;
+    
+}
+.description a{
+    color: gray
+}
+.description i{
+    color: #ff385c;
+}
+.feel-icons{
+    float:right
+}
+.share,.Save{
+    background-color: white ;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+.share:hover, .Save:hover{
+   background-color: lightgrey;
+   border-radius: 5px; 
+}
+.box{
+    width: 320px;
+    height: 30px;
+    padding: 10px;
+    border:solid lightgrey;
+    margin: 10px;
+    float: right;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 50vh;
+    overflow-y: auto;
+ }
+  .box i{
+      margin-left: 100px;
+      color:#ff385c ;
+  }
+  .rating{
+      font-weight: bold;
+  }
