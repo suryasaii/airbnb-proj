@@ -1,6 +1,10 @@
 body{
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #222222;
 }
 .img-grid{
     display: grid;
@@ -8,8 +12,9 @@ body{
     grid-template-rows: repeat(2, 12vw);
     grid-gap:10px; 
     max-width: 100%;
-    margin-left: 0px;
-    margin-left: 0px;
+    margin-right: 100px;
+    margin-left: 100px;
+    
     
     
 }
@@ -50,7 +55,25 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
+.img-window-img5 .btn {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 8px 15px ;
+    border: black;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+
+  }
 
 
 
@@ -78,7 +101,8 @@ body{
     box-shadow: 0px 0px 0.5px 0.5px grey;
     padding-left: 20px;
     margin-left: 100px;
-    
+    position: relative;
+    top: 20px;
     cursor: pointer 
     
 }
@@ -90,7 +114,8 @@ body{
    float: right;
    transform: scale(0.8);
    font-size: 15px;
-   
+   position: relative;
+   top: -15px
 }
 .host a{
     margin-left: 50px;
@@ -109,6 +134,8 @@ body{
   border-radius: 30px;
   box-shadow: 0px 0px 0.5px 0.5px grey;
   padding-bottom: 10px;
+  position: relative;
+  
   cursor: pointer
 }
 .profile-logo{
@@ -117,6 +144,8 @@ body{
 }
 .description{
     padding-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     
 }
 .description a{
@@ -137,48 +166,130 @@ body{
    background-color: lightgrey;
    border-radius: 5px; 
 }
+
+
 .box{
-    width: 320px;
-    height: 10pxpx;
-    padding: 10px;
-    margin: 10px;
-    float: right;
+    border: 2px solid rgb(221, 221, 221);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
     position: sticky;
     top: 200px;
-    border: 1px solid rgb(221, 221, 221);
-    height: 50vh;
-    overflow-y: auto;
- }
-  .box i{
-      margin-left: 80px;
-      color:#ff385c ;
-  }
+    left: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow:0px 0px 10px 10px  whitesmoke;
+    width: 350px;
+    float: right;
+    
+}
+ 
   .rating{
+      float: right;
       font-weight: bold;
   }
+  .box i{
+    color:#ff385c ;
+}
+.in-out{
+    display: flex;
+    
+    height: 80px;
+    width: auto;
+    border: 1px solid rgb(221, 221, 221);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
 .checkin{
-    padding: 10px 50px 10px 10px;
+   position: relative;
+   /* margin-left: 50px; */
+   padding: 10px;
+    
+}   
+.border{
     border-right: 1px solid rgb(221, 221, 221);
+    padding-left: 100px;
 }
 .checkout{
-    padding: 10px 10px 10px 50px; 
+  
+    position: relative;
+    /* margin-bottom: 5px;
+    margin-left: 50px; */
+    padding: 10px;
+   
+}
+.font{
+    font-weight: lighter;
+    font-size: 15px;
 }
 .guests{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;   
+    border: 1px solid rgb(221, 221, 221);
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 80px;
+    cursor: pointer;
+     
 }
+.guests h6{
+    font-size: 12px;
+    padding-left: 10px;
+    
+}
+.guest-icon{
+   margin-left: 220px;
+   margin-top: 50px;
+   text-decoration-color: black;
+}
+
 .box-button{
     display: flex;
     justify-content: center;
+    
 }
 .box-button input{
-    width: 320px;
+    width: 350px;
     height: 50px;
     margin-top: 10px;
     color: white;
     font-weight: 600;
     background-color: rgb(227, 28, 95) ;
     border-radius: 15px;
+    cursor: pointer;
+    border-style: none;
+}
+.box-button:active{
+    transform: scale(0.95);
+    transition-duration: 0.1s;
+
+}
+.content-down{
+    margin-left: 100px;
+    margin-right: 550px;
+}
+.content-down img{
+    border-radius: 50%;
+    max-width: 60px;
+   float: right;
+}
+.down-p p{
+    font-weight: lighter;
+    color: gray;
+    margin-left: 25px;
+}
+.down-box{
+    border: 2px solid rgb(221, 221, 221);
+    display: grid;
+    position:relative;
+    top: 5px;
+    border-radius: 15px;
+    height: 150px;
+    width: 200px;
+    
 }
