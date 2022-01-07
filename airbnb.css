@@ -1,11 +1,10 @@
 body{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
-    font-family:  sans-serif;
-    font-weight: 200;
-    font-style:italic;
-    color: #222222;
+    font-family:Arial,sans-serif;
+    
+    
+    
 }
 .img-grid{
     display: grid;
@@ -15,8 +14,6 @@ body{
     max-width: 100%;
     margin-right: 100px;
     margin-left: 100px;
-    
-    
     
 }
 
@@ -75,8 +72,10 @@ body{
     
 
   }
-
-
+.img-grid:hover{
+    
+    opacity: 3;
+}
 
 .nav-bar{
     display: grid;
