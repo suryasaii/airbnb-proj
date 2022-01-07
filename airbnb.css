@@ -2,8 +2,9 @@ body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family:  sans-serif;
     font-weight: 200;
+    font-style:italic;
     color: #222222;
 }
 .img-grid{
@@ -93,6 +94,8 @@ body{
     font-size: 0.8cm ;
     padding-left: 40px;
     padding-top: 25px;
+    position: relative;
+    left: 60px;
 }
 .search-box{
     height: 1cm;
@@ -117,14 +120,20 @@ body{
    position: relative;
    top: -15px
 }
+.search-box-p{
+    position: relative;
+    bottom: 5px;
+}
 .host a{
     margin-left: 50px;
     text-decoration: none;
     color: black;
+    position: relative;
+    left: 60px;
 
 }
 .navelast{
-    margin-top: 15px;
+    margin-top: 30px;
 
 }
 .profile{
@@ -133,14 +142,17 @@ body{
   width: 2cm;
   border-radius: 30px;
   box-shadow: 0px 0px 0.5px 0.5px grey;
-  padding-bottom: 10px;
+  margin-right: 100px;
   position: relative;
-  
+  top: -10px;
+
   cursor: pointer
 }
-.profile-logo{
-    margin-left: 20px;
-    size: 10px;
+.profile i{
+    position:relative;
+    top:5px;
+    left: 10px;
+    
 }
 .description{
     padding-bottom: 20px;
